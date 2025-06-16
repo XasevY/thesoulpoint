@@ -1,6 +1,5 @@
 [build]
   publish = "public"
-  command = "npm run build" # или укажи свой билд-команду, если есть. Если нет сборки — удали эту строку.
 
 [[redirects]]
   from = "/admin/*"
