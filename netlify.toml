@@ -1,1 +1,8 @@
-/admin/*  /admin/index.html  200
+[build]
+  publish = "public"
+  command = "npm run build" # или укажи свой билд-команду, если есть. Если нет сборки — удали эту строку.
+
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/index.html"
+  status = 200
