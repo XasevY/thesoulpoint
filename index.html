@@ -3,10 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <script>
-    const token = window.location.hash.match(/invite_token=([^&]+)/);
-    if (token) {
-    window.location.replace('/admin/#invite_token=' + token[1]);
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", function(user) {
+      if (!user) {
+        window.netlifyIdentity.on("login", function() {
+          document.location.href = "/admin/";
+        });
+      }
+    });
   }
 </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
