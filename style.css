@@ -625,41 +625,172 @@ a {
 }
 
 @media (max-width: 768px) {
-  .icons-header a {
-    display: none; /* скрываем только иконки-ссылки */
-  }
-
-  .icons-header button {
-    display: block;
-    padding: 0;
-    background: none;
-    border: none;
-  }
-
-  .icons-header button img {
-    width: 28px;
-    height: 28px;
-  }
-
-  .help {
-    display: none;
-  }
-
-  .logo-img {
-    width: 40px;
-    height: 60px;
-  }
-
-  .logo-title {
-    font-size: 22px;
-  }
-
-  .logo-subtitle {
-    font-size: 13px;
+  .icons-header {
+    justify-content: flex-end;
+    gap: 0;
+    padding-right: 50px;
   }
 
   .header-inner {
-    padding: 16px 20px;
-    height: auto;
+    padding: 0 20px;
+  }
+
+  .icons-header a {
+    display: none;
+  }
+
+  .icons-header button {
+    display: inline-flex;
+    background: none;
+    border: none;
+    padding: 0;
+  }
+
+  .icons-header img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .uk-offcanvas-bar {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .uk-offcanvas-bar .offcanvas-top {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .offcanvas-logo img {
+    max-height: 60px;
+  }
+
+  .uk-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+  }
+
+  .uk-nav > li > a {
+    font-size: 20px;
+    font-weight: 400;
+    color: #2a2a2a;
+  }
+
+  .uk-margin-top {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .uk-margin-top .uk-flex {
+    justify-content: center !important;
+  }
+
+  .main-content {
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .content {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .content-tagline {
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+
+  .content-name {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .content-description {
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 15px;
+  }
+
+  .cta-button-wrapper {
+    margin-top: 0;
+  }
+
+  .cta-button {
+    height: 50px;
+    width: 160px;
+    font-size: 16px;
+    border-radius: 12px;
+  }
+
+  .consult-section-title {
+    font-size: 24px;
+  }
+
+  .consult-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .consult-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .help-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    gap: 24px;
+    padding: 0px 20px;
+    margin-right: 0;
+  }
+
+  .help-title {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .help-subtitle {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .help-title,
+  .help-subtitle {
+  word-break: break-word;
+  white-space: normal;
+  }
+
+  .therapy-title {
+    font-size: 24px;
+  }
+
+  .therapy-card-title {
+    font-size: 16px;
+  }
+
+  .therapy-card-subtitle {
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  #reviews h2 {
+    font-size: 24px;
   }
 }
