@@ -740,7 +740,7 @@ a {
   }
 
   .consult-card {
-    max-width: 285px;
+    width: 285px;
     text-align: center;
   }
 
